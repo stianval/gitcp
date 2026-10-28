@@ -22,10 +22,13 @@ only trace back and make move deductions based on files that exist in the same
 commit.
 
 There are flags that will extend this trace to involve files in the repo
-outside a given commit as well, but this has two drawbacks
+outside a given commit as well, but this has three drawbacks
 1. The algorithm becomes more expensive
 2. Such flags can be hard to remember/discover, mostly only experts would ever
    reach for them
+3. Many tools that uses git for log and blame (e.g. editor plugins, GitHub)
+   does not expose these flags, or or add another layer of difficulty of
+   discovery
 
 If you're the expert, you can save yourself this way. But also, if you're the
 expert, I plan to describe a way for you to save everyone, by more carefully
