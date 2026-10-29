@@ -35,6 +35,9 @@ expert, I plan to describe a way for you to save everyone, by more carefully
 craft copy-heavy commit so `git log --follow` and `git blame` can still work
 with no extra flags on all copies of the files.
 
+For those anyway still curious what those flags are, for blame one can do `git
+blame -C -C` on the relevant file (note:  two `-C`).
+
 # Procedure
 
 If you find yourself in need to copy one or more files in a repo, you can
